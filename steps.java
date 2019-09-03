@@ -35,6 +35,8 @@ public void correct_titel_and_description() throws Throwable
 {
 System.out.println("This shows the correct titel and description");
 driver.findElement(By.id("xggw4p-0"));
+title = driver.findElement(By.className('Contact'))
+description = driver.findElement(By.className('In this first-of-its-kind global investigation series, an international task force led by the United States…'))
 Assert.assertEquals("Contact",title);
 Assert.assertEquals("In this first-of-its-kind global investigation series, an international task force led by the United States",description)
 }
