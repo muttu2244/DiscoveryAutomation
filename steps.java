@@ -10,7 +10,7 @@ public class Steps {
 @Given("^I am on the Discovery Search page$")
 public void launch_discovery_website() throws Throwable
 {
-System.out.println("This Step open the Firefox and launch the application.");
+System.out.println("This Step open the chrome and launch the application.");
 driver = new chromeDriver();
 driver.get("https://discovery.com/")
 }
